@@ -1,3 +1,5 @@
+import matplotlib
+matplotlib.use('Agg')   # 云端服务器没有显示器，必须指定Agg后端
 import streamlit as st
 import pandas as pd
 import numpy as np
