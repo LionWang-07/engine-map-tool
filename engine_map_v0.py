@@ -1,12 +1,11 @@
 import matplotlib
-matplotlib.use('Agg')   # 云端服务器没有显示器，必须指定Agg后端
+matplotlib.use('Agg')
 import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from io import BytesIO
 from scipy.interpolate import griddata
-
 # -------------------------- session_state --------------------------
 if "param_single" not in st.session_state:
     st.session_state.param_single = {
